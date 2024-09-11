@@ -18,7 +18,7 @@ const Banner = () => {
         </div>
         <div className='w-full flex justify-center flex-col md:text-center text-left'>
             <p className='md:text-6xl text-3xl font-bold font-mono py-3 py-10 '>Effortless online voting  for events of any size</p>
-            <p className='py-3 md:text-2xl basis-1/2 '>                
+            <p className='py-3 md:text-2xl basis-1/2  font-extralight'>                
               Enables real-time, secure voting for Awards, Competitions, and More – All on One Platform
             </p>
 

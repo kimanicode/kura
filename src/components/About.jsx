@@ -29,7 +29,7 @@ const About = () => {
 
             <CardBody>
                 <p className='font-bold '>Easy Event Setup</p>
-                <p>Launch your voting event in minutes with our intuitive interface.</p>
+                <p className='font-extralight'>Launch your voting event in minutes with our intuitive interface.</p>
 
             </CardBody>
 
@@ -57,7 +57,7 @@ const About = () => {
 
             <CardBody>
                 <p className='font-bold '>Secure and Reliable</p>
-                <p>Protect your voting process with top-tier security and fraud prevention.</p>
+                <p className='font-extralight'>Protect your voting process with top-tier security and fraud prevention.</p>
 
             </CardBody>
 
@@ -85,7 +85,7 @@ const About = () => {
 
             <CardBody>
                 <p className='font-bold '>Real-Time Analytics</p>
-                <p> Monitor votes and generate reports instantly to see who’s leading.</p>
+                <p className='font-extralight'> Monitor votes and generate reports instantly to see who’s leading.</p>
 
             </CardBody>
 
@@ -114,7 +114,7 @@ const About = () => {
 
             <CardBody>
                 <p className='font-bold '>Custom Branding</p>
-                <p>Tailor the look and feel of your voting event to match your brand identity.</p>
+                <p className='font-extralight'>Tailor the look and feel of your voting event to match your brand identity.</p>
 
             </CardBody>
 
