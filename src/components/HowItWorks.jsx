@@ -17,7 +17,7 @@ const HowItWorks = () => {
                         height={300}
                         alt="NextUI hero Image"
                         src={create}
-                        className='border-2 rounded-full'
+                        className='border-2 rounded-full border-danger'
                   
                     />
                 </div>
@@ -41,7 +41,7 @@ const HowItWorks = () => {
                         height={300}
                         alt="NextUI hero Image"
                         src={invite}
-                        className='border-2 rounded-full'
+                        className='border-2  border-danger rounded-full'
                   
                     />
                 </div>
@@ -63,7 +63,7 @@ const HowItWorks = () => {
                         height={300}
                         alt="NextUI hero Image"
                         src={analytics}
-                        className='border-2 rounded-full'
+                        className='border-2 rounded-full border-danger'
                   
                     />
                 </div>

@@ -6,8 +6,8 @@ const Banner = () => {
   return (
     <div className=' flex flex-col justify-center items-center  w-full' >
         <div className='bg-primary md:h-20  h-[150px] rounded-lg md:w-2/3 w-full flex justify-between my-3 items-center px-3 py-3 md:flex-row flex-col'>
-          <div className='px-3'>
-            <p className='text-white font-bold'>Vote with a code</p>
+          <div className='px-3 py-6'>
+            <p className='text-white font-bold md:p-[1px] '>Vote with a code</p>
           </div>
           <div className='basis-1/2'>
           <Input type="email" label="# Enter the code " className='' />

@@ -12,6 +12,7 @@ export default function NavBar() {
     "Features",
     "Pricing",
     "Resources",
+    "Contact Sales",
    
   ];
 
@@ -73,7 +74,7 @@ export default function NavBar() {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu className="">
+      <NavbarMenu className="my-10">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link

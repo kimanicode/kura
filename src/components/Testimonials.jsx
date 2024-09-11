@@ -46,7 +46,7 @@ const Testimonials = () => {
               <div className="bg-slate-200 rounded-xl flex flex-col md:flex-row items-center p-6 w-full md:w-3/5 mx-auto">
                 
                 <div className=" text-gray-700 md:text-left">
-                  <p className="text-lg font-light mb-4">{testimonial.text}</p>
+                  <p className="text-lg font-light mb-4 text-left">{testimonial.text}</p>
                   <div className="mt-4">
                     <p className="text-primary font-semibold">{testimonial.name}</p>
                     <span className="text-gray-500 italic">{testimonial.position}</span>
