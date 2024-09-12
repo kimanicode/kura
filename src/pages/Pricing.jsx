@@ -64,7 +64,7 @@ const Pricing = () => {
       <div className='flex gap-4 justify-center md:flex-row flex-col md:w-full' >
           {plans.map((plan, index) => (
             <div key={index} className='basis-1/4 m-3 '>
-              <Card className="shadow-lg p-6 rounded-lg bg-slate-300 flex justify-center items-center hover:bg-slate-200">
+              <Card className="shadow-lg p-6 rounded-lg bg-slate-200 flex justify-center items-center hover:bg-slate-100 ">
                 <p className="text-center mb-4 font-extralight ">{plan.title}</p>
                 <p className="text-primary text-center mb-4 font-bold text-3xl">
                   {plan.price}

@@ -52,7 +52,7 @@ const Footer = () => {
           {/* Social Media and Newsletter */}
           <div >
             <h3 className="text-white text-lg font-semibold mb-4">Connect with Us</h3>
-            <div className="space-x-4 mb- flex flex-row md:justify-center justify-start">
+            <div className="space-x-4 mb- flex flex-row  justify-start">
              <div>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                 <FaTwitter className="w-6 h-6" />

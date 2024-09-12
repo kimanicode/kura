@@ -1,8 +1,14 @@
 import React from 'react'
 import { Button } from '@nextui-org/button'
 import {Input} from "@nextui-org/input";
+import {useNavigate} from 'react-router-dom'
 
 const Banner = () => {
+  const navigate = useNavigate() ;
+
+  const handleGetStarted = ()=>{
+    navigate('/sign-up')
+  }
   return (
     <div className=' flex flex-col justify-center items-center  w-full' >
         <div className='bg-primary md:h-20  h-[150px] rounded-lg md:w-2/3 w-full flex justify-between my-3 items-center px-3 py-3 md:flex-row flex-col'>
@@ -24,7 +30,7 @@ const Banner = () => {
 
         </div>
         <div className='w-full py-6 flex justify-center'>
-        <Button  color="danger" href="#" variant="shadow" className='md:w-1/4 w-full'>
+        <Button  color="danger" href="#" variant="shadow" className='md:w-1/4 w-full' onClick={handleGetStarted}>
             Get Started 
           </Button>
 
