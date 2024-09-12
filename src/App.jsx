@@ -9,6 +9,7 @@ import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import Contact from './pages/Contact'
 import Product from './pages/Product'
+import ScrollToTop from './components/ScrollToTop';
 
 
 
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className='w-full '>
         <NavBar/>
         <Routes>
