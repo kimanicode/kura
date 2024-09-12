@@ -7,7 +7,7 @@ import { Image } from '@nextui-org/react'
 const HowItWorks = () => {
   return (
     <div className='w-full'>
-        <p className='text-2xl text-primary font-semibold py-6 '>How It Works</p>
+        <p className='text-2xl text-primary font-semibold py-6 text-center '>How It Works</p>
         <div className='flex flex-col justify-center items-center'>
             
             <div className='flex  items-center gap-4 md:flex-row flex-col-reverse  py-3'>

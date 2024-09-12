@@ -37,7 +37,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className='w-full px-10 py-5 bg-gray-100'>
+    <div className='w-full px-10 py-5 bg-gray-600'>
       <p className='text-2xl text-danger py-3 font-semibold text-center'>Testimonials</p>
       <div className="mt-10 py-6">
         <Slider {...settings}>

@@ -1,20 +1,32 @@
 import React from "react";
-import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
-import { div } from "framer-motion/client";
+import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Button} from "@nextui-org/react";
+import {Link ,useNavigate} from 'react-router-dom'
+
 
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
+  const navigate  = useNavigate();
+
   const menuItems = [
-    "Product",
-    "Integrations",
-    "Features",
-    "Pricing",
-    "Resources",
-    "Contact Sales",
+    
+    { name: 'Home', route: '/' },
+    { name: 'Product', route: '/product' },
+    { name: 'Pricing', route: '/pricing' },
+    { name: 'Features', route: '/features' },
+    { name: 'Contact', route: '/contact' }
    
   ];
+
+  const handleClick =() =>{
+    setIsMenuOpen(false)
+  }
+
+  const handleSignup = () =>{
+    navigate('/sign-up')
+
+  }
 
   return (
     <div className="p-0  w-full">
@@ -31,61 +43,65 @@ export default function NavBar() {
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
           
-          <p className="font-bold  text-danger">KURA</p>
+          <Link to ='/'><p className="font-bold  text-danger">KURA</p></Link>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
          
-          <p className="font-bold  text-danger">KURA</p>
+        <Link to ='/'> <p className="font-bold  text-danger">KURA</p></Link>
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" to="features">
             Features
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
+        <NavbarItem>
+          <Link color="foreground" to="product">
+            Product
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link to="/pricing" aria-current="page">
             Pricing
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" to="/integrations">
             Integrations
           </Link>
         </NavbarItem>
 
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Resources
+          <Link color="foreground" to="/contact">
+            Contact
           </Link>
         </NavbarItem>
       </NavbarContent>
 
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
+          <Link to="/login">Login</Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="danger" href="#" variant="ghost">
+          <Button  color="danger" onClick={handleSignup} variant="ghost">
             Sign Up
           </Button>
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu className="my-10">
+      <NavbarMenu className="">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
               className="w-full"
-            //   color={
-            //     index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
-            //   }
-              href="#"
+           
+              to={item.route}
               size="lg"
+              onClick={handleClick}
             >
-              {item}
+              {item.name}
             </Link>
           </NavbarMenuItem>
         ))}

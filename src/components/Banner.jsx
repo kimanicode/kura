@@ -23,7 +23,7 @@ const Banner = () => {
             </p>
 
         </div>
-        <div className='w-full py-6'>
+        <div className='w-full py-6 flex justify-center'>
         <Button  color="danger" href="#" variant="shadow" className='md:w-1/4 w-full'>
             Get Started 
           </Button>
