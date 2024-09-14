@@ -17,7 +17,7 @@ const SignUp = () => {
   return (
     <div className='w-full flex justify-center md:py-10 py-6'>
       
-        <Card className='border-2 md:w-1/3 px-3 py-6'>
+        <Card className='border-2 md:w-1/3 w-[80%]  px-3 py-6'>
             <div className='flex justify-center flex-col items-center'>
                 <p className='text-xl font-semibold flex justify-center items-center gap-3'>Hello There! <CiFaceSmile /></p>
                 <p>Create Account</p>
