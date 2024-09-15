@@ -1,8 +1,10 @@
-import { Button, Card, Input } from '@nextui-org/react'
+import { Button, Card, Image, Input } from '@nextui-org/react'
 import React, { useState } from 'react'
 import { FaGoogle,FaLinkedin,FaApple } from "react-icons/fa";
 import {Link } from 'react-router-dom'
 import { CiFaceSmile } from "react-icons/ci";
+import search from '../assets/search.png'
+
 
 
 
@@ -27,15 +29,20 @@ const SignUp = () => {
 
             <div className='flex justify-center gap-5 py-3'>
                 <div className='bg-gray-200 py-3 px-6 rounded-lg text-primary'>
-                    <p className=''><FaGoogle size={20} /> </p>       
+                   
+                        <Image 
+                            src={search}
+                        />
+                        
+                           
 
                 </div>
                 <div className='bg-gray-200 py-3 px-6 rounded-lg text-primary'>
-                    <p className=''><FaLinkedin size={20}/> </p>       
+                    <p className=''><FaLinkedin size={24}/> </p>       
 
                 </div>
                 <div className='bg-gray-200 py-3 px-6 rounded-lg text-primary'>
-                    <p className=''><FaApple size={20}  /> </p>       
+                    <p className=''><FaApple size={24}  /> </p>       
 
                 </div>
 

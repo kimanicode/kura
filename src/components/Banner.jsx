@@ -1,7 +1,9 @@
 import React from 'react'
-import { Button } from '@nextui-org/button'
-import {Input} from "@nextui-org/input";
+import { Button,Input ,Image } from '@nextui-org/react'
 import {useNavigate} from 'react-router-dom'
+import next from '../assets/fast-forward.png'
+import { MdArrowForwardIos } from "react-icons/md";
+
 
 const Banner = () => {
   const navigate = useNavigate() ;
@@ -15,8 +17,20 @@ const Banner = () => {
           <div className='px-3 py-6'>
             <p className='text-white font-bold md:p-[1px] '>Vote with a code</p>
           </div>
-          <div className='basis-1/2'>
-          <Input type="email" label="# Enter the code " className='' />
+          <div className='basis-1/2 bg-white   flex gap-2'>
+            <div className='w-[70%]'>
+              <Input type="email" label="# Enter the code " className='bg-white rounded-none' />
+            </div>
+            
+              <div className='md:w-[25%] py-2 '>
+                <Button className=' rounded-full bg-primary text-white w-full'>
+                <MdArrowForwardIos />
+
+
+              </Button>
+            
+              </div>
+
 
           </div>
       
